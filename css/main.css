@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+}
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+.wrapper {
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+.front {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(49, 87, 255);
+  overflow: hidden;
+}
+.container * {
+  position: absolute;
+  margin: auto;
+}
+h1.logo {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  padding: 10px 20px;
+  border: 5px solid white;
+  border-radius: 50%;
+  z-index: 999;
+  animation-name: high;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.maker {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background: transparent;
+  border: 20px solid rgba(255, 255, 255, 0.1);
+  z-index: 500;
+  opacity: 0;
+}
+@keyframes scaling {
+  from {transform: scale(1); opacity: 1;}
+  to {transform: scale(4); opacity: 0.1;}
+}
+@keyframes high {
+  0% {transform: scale(1.1);}
+  50% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+.first {
+  animation-name: scaling;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; 
+}
+.second {
+  animation-delay: 1s;
+  animation-name: scaling;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; 
+}
+.third {
+  animation-delay: 2s;
+  animation-name: scaling;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; 
+}
+.forth {
+  animation-delay: 3s;
+  animation-name: scaling;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; 
+}
+.fifth {
+  animation-delay: 4s;
+  animation-name: scaling;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; 
+}
+.pointer {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+mover {
+  
+}
